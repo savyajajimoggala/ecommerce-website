@@ -10,6 +10,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -23,6 +24,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -36,7 +38,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
-    
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -50,7 +52,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
-    
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -64,7 +66,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
-    
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -78,6 +80,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -91,6 +94,7 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -104,10 +108,12 @@ const products=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 }
 ]
 
 const productContainer = document.getElementsByClassName("product-list")[0];
+
 
 function renderProducts() {
     productContainer.innerHTML = "";
@@ -116,16 +122,15 @@ function renderProducts() {
             <div class="product__item">
                 <div class="product__banner">
                     <a href="details.html" class="product__images">
-                        <img src="${product.images.default}" alt="${product.title}" class="product__img default">
+                        <img src="${product.images.default}" alt="${product.title}" class="product__img default" >
                         <img src="${product.images.hover}" alt="${product.title}" class="product__img hover">
                     </a>
                     <div class="product__actions">
                         <a href="#" class="action__btn" aria-label="Quick View"><i class="fi fi-rs-eye"></i></a>
-                        <a href="#" class="action__btn" aria-label="Add To Wishlist"><i class="fi fi-rs-heart"></i></a>
+                        <a href="#" class="action__btn" aria-label="Add To wishlist"><i class="fi fi-rs-heart"></i></a>
                         <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
                     </div>
-                </div> <!-- ✅ Closing tag for product__banner -->
-
+                </div>
                 <div class="product__content">
                     <span class="product__category">${product.category}</span>
                     <a href="details.html"><h2 class="product__title">${product.title}</h2></a>
@@ -144,6 +149,7 @@ function renderProducts() {
         `;
     });
 }
+
 renderProducts();
 const popularContainer = document.getElementsByClassName("popular")[0];
 
@@ -251,6 +257,7 @@ const newArrivals=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -264,6 +271,7 @@ const newArrivals=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 },
 {
     category: "Clothing",
@@ -277,6 +285,7 @@ const newArrivals=[{
         new: "$125.69",
         old: "$138.47"
     },
+    badge: "Hot"
 }]
 const newArrivalContainer = document.getElementById("new-arrival");
 
@@ -388,5 +397,5 @@ const tabs = document.querySelectorAll('[data-target]'),
         });
 
        tab.classList.add('active-tab');
-    });
+    });
 });
