@@ -168,7 +168,6 @@ function renderPopularProducts() {
                         <a href="#" class="action__btn" aria-label="Add To wishlist"><i class="fi fi-rs-heart"></i></a>
                         <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
                     </div>
-                    <div class="product__badge light-pink">${product.badge}</div>
                 </div>
                 <div class="product__content">
                     <span class="product__category">${product.category}</span>
@@ -305,7 +304,6 @@ function renderArrivals() {
                         <a href="#" class="action__btn" aria-label="Add To wishlist"><i class="fi fi-rs-heart"></i></a>
                         <a href="#" class="action__btn" aria-label="Compare"><i class="fi fi-rs-shuffle"></i></a>
                     </div>
-                    <div class="product__badge light-pink">${product.badge}</div>
                 </div>
                 <div class="product__content">
                     <span class="product__category">${product.category}</span>
